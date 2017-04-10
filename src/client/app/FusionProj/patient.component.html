@@ -1,0 +1,80 @@
+
+<div id="serviceTypes">
+    
+        <tr>
+            <td>
+                Service Type:
+            </td>
+            <td>
+                <span style="background-color: green; padding-right: 35px;"></span>
+                <span>Benefits Verification</span>
+            </td>
+            
+            <td>
+                <span style="background-color: yellow; padding-right: 35px;"></span>
+                <span>Prior Authorization</span>
+            </td>
+            
+            <td>
+                <span style="background-color: blue; padding-right: 35px;"></span>
+                <span>CoPay</span>
+            </td>
+            <td>
+                <span style="background-color: lightblue; padding-right: 35px;"></span>
+                <span>PAP</span>
+            </td>
+            <td>
+                <span style="background-color: gray; padding-right: 35px;"></span>
+                <span>Prescription Refferral</span>
+            </td>
+        </tr>
+    
+</div>
+
+<div id="statusKey">
+    
+        <tr>
+            <td>
+                Status Key
+            </td>
+            <td>
+                <span class="glyphicon glyphicon-circle-arrow-up Completed"></span>
+                <span>Completed</span>
+            </td>
+            <td>
+                 <span class="glyphicon glyphicon-circle-arrow-up InProgress"></span>
+                <span>In Progress</span>
+            </td>
+            <td>
+                 <span class="glyphicon glyphicon-circle-arrow-up ActionNeeded"></span>
+                <span>Action Needed</span>
+            </td>
+        </tr>
+  
+
+</div>
+
+<div>
+    <table>
+        <tr *ngFor="let patient of patientDetails">
+            <td>
+               <i class="glyphicon glyphicon-circle-arrow-up {{patient.statusKey}}"></i>
+            </td>
+            <td class="name">
+                {{patient.name}}
+            <td>
+               patient id: {{patient.patientID}}
+            </td>
+            <td>
+              Date of birth:  {{patient.dob}}
+            </td>
+            <td>
+              Service Id:  {{patient.serviceID}}
+            </td>
+            <td>
+               <span class="{{patient.service}}">{{patient.service}}</span> 
+            </td>
+        </tr>
+
+    </table>
+</div>

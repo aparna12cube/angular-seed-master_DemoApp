@@ -1,0 +1,56 @@
+
+table{
+    width: 60%;
+    
+}
+tr{
+  border:1px solid black;
+   margin-bottom: 3px;
+}
+
+sd-patient{
+    width:60%
+}
+.glyphicglyphicon-circle-arrow-upon{
+    padding:5px;
+}
+.CoPay{
+    /*background:url("././Images/Copay.jpeg"); */
+    background-color: blue;
+}
+.BV{
+    /*background: url("./BenefitVerification.jpg");*/
+    background-color: green;
+}
+.PA{
+    /*background-image:url('././Images/PriorAuthorization.jpg');*/
+    background-color: yellow;
+}
+td.name{
+   
+        color: blue;
+    
+}
+.glyphicon-circle-arrow-up{
+    color:red;
+}
+.ActionNeeded{
+    color:red;
+}
+.Completed{
+    color: blue;
+}
+.InProgress{
+    color: yellow;
+}
+#serviceTypes{
+    width: 60%;
+    margin-bottom: 10px;
+    border: 1px solid black;
+   
+}
+#statusKey{
+     width: 40%;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
